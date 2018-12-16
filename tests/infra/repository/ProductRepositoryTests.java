@@ -63,7 +63,6 @@ class ProductRepositoryTests {
 		int productDelete = repo.deleteProduct(IDExistentInDB);
 
 		Assertions.assertEquals(1, productDelete, "The Product has not been deleted");
-
 	}
 
 	@Test
