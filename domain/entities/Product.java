@@ -77,9 +77,9 @@ public class Product {
 	 * DecimalFormat("###.##"); DecimalFormatSymbols dfs = new
 	 * DecimalFormatSymbols(); dfs.setDecimalSeparator(',');
 	 * decimalFormat.setDecimalFormatSymbols(dfs);
-	 * 
+	 *
 	 * return Double.parseDouble(decimalFormat.format(price));
-	 * 
+	 *
 	 * }
 	 */
 }

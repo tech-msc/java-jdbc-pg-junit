@@ -56,7 +56,8 @@ class ProductRepositoryTests {
 	}
 
 	/*
-	 * WARNING The Delete Test need begin next to the InsertProductWithIDDuplicated
+	 * WARNING The Delete Test should start after the InsertProductWithIDDuplicated
+	 * Test
 	 */
 	@Test
 	void DeleteProductByID() throws SQLException {
