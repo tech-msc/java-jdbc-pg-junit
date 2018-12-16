@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import entities.Product;
@@ -14,7 +13,6 @@ import repository.ProductRepository;
 class ProductRepositoryTests {
 
 	@Test
-	@Tag("Product1")
 	void ListAllProducts() throws SQLException {
 		List<Product> list = new ArrayList<>();
 		ProductRepository repo = new ProductRepository();
@@ -23,7 +21,6 @@ class ProductRepositoryTests {
 	}
 
 	@Test
-	@Tag("Product1")
 	void ListProductById() throws SQLException {
 		String productId = "05fdec88-ab81-422e-81a3-aab33571fc0a";
 		ProductRepository repo = new ProductRepository();
@@ -32,7 +29,6 @@ class ProductRepositoryTests {
 	}
 
 	@Test
-	@Tag("Product")
 	void InsertNewProduct() throws SQLException {
 		Product product = new Product("product_test", 10.11, 10, "manufacturer test");
 		ProductRepository repo = new ProductRepository();
