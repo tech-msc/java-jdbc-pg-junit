@@ -1,4 +1,4 @@
-package repository;
+package infra.repository;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -7,10 +7,12 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import config.DbConfig;
-import dbcontext.ProductDataContext;
-import entities.Product;
-import irepository.IProductRepository;
+import domain.entities.Product;
+import domain.irepository.IProductRepository;
+import infra.config.DbConfig;
+import infra.dbcontext.ProductDataContext;
+
+
 
 public class ProductRepository implements IProductRepository {
 

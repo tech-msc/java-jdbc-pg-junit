@@ -1,4 +1,4 @@
-package dbcontext;
+package infra.dbcontext;
 
 import java.sql.Connection;
 import java.sql.SQLException;

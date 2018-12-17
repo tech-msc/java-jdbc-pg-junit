@@ -1,8 +1,8 @@
-package irepository;
+package domain.irepository;
 
 import java.util.List;
 
-import entities.Product;
+import domain.entities.Product;
 
 public interface IProductRepository {
 	Product listProductByID(String productId);

@@ -1,4 +1,4 @@
-package infra.repository;
+package tests.infra.repository;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
@@ -7,8 +7,8 @@ import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import entities.Product;
-import repository.ProductRepository;
+import domain.entities.Product;
+import infra.repository.ProductRepository;
 
 class ProductRepositoryTests {
 
@@ -70,7 +70,7 @@ class ProductRepositoryTests {
 		Product product = new Product("product test", 10.50, 20, "manufacturer test");
 
 		ProductRepository repo = new ProductRepository();
-		Product productDB = repo.listProductByID("e73011bf-5893-457e-b7e2-a114a55ed6ff");
+		Product productDB = repo.listProductByID("bdff93ef-5d4e-4608-9321-16af62943a29");
 
 		int productUpdated = repo.updateProduct(product, productDB.getId());
 
